@@ -1,0 +1,53 @@
+{#
+  Image
+    - widthL
+    - widthM
+    - widthS
+    - image
+      - image.url
+      - image.description
+#}
+
+{% set image_large = image.width(widthL) %}
+{% set image_medium = image.width(widthM) %}
+{% set image_small = image.width(widthS) %}
+{% set unique_id = random() %}
+
+<img
+
+data-srcset=" {{ image_large.url }} {{widthL}}w,
+      	 {{ image_medium.url }} {{widthM}}w,
+      	 {{ image_small.url }} {{widthS}}w"
+
+data-sizes="(max-width: 47.9375em) {{widthS}}px,
+         (min-width: 48em) and (max-width: 64em) {{widthM}}px,
+         {{widthL}}px"
+
+data-src="{{ image_small.url }}"
+
+alt="{{ image.description }}" 
+
+class="Image is-lazy Image--{{ unique_id }}"
+
+/>
+
+<style>
+  .Image--{{ unique_id }} {
+    width:{{ image_large.width }}px;
+    height:{{ image_large.height }}px;
+  }
+
+  @media(max-width: 47.9375em) {
+    .Image--{{ unique_id }} {
+      width:{{ image_small.width }}px;
+      height:{{ image_small.height }}px;
+    }
+  }
+
+  @media(min-width: 48em) and (max-width: 64em) {
+    .Image--{{ unique_id }} {
+      width:{{ image_medium.width }}px;
+      height:{{ image_medium.height }}px;
+    }
+  }
+</style>

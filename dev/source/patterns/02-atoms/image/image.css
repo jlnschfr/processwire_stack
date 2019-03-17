@@ -1,0 +1,10 @@
+/** @define Image; */
+
+.Image {
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.Image.is-loaded {
+  opacity: 1;
+}

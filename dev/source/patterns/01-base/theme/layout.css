@@ -1,0 +1,21 @@
+@media (--mobile) {
+
+  .Block {
+    margin-top: var(--space-s);
+  }
+
+  .MainContent {
+    padding: var(--space-xs) var(--space-xs) var(--space-s);
+  }
+}
+
+@media (--tablet-desktop) {
+
+  .Block {
+    margin-top: var(--space-m);
+  }
+
+  .MainContent {
+    padding: var(--space-s) var(--space-m);
+  }
+}

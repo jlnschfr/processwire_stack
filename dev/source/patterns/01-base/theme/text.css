@@ -1,0 +1,36 @@
+/** @define Text;weak */
+
+.Text--large {
+  font-weight: bold;
+}
+
+.Text--medium {
+  text-transform: uppercase;
+}
+
+@media (--mobile) {
+
+  .Text--large {
+    font-size: calc(var(--font-size-mobile) + 0.5rem);
+  }
+
+  .Text--medium {
+    font-size: var(--font-size-mobile);
+  }
+}
+
+@media (--tablet-desktop) {
+
+  .Text--large {
+    font-size: calc(var(--font-size-desktop) + 1.5rem);
+  }
+
+  .Text--medium {
+    font-size: var(--font-size-desktop);
+  }
+
+  .Text--small {
+    font-size: calc(var(--font-size-desktop) - 1rem);
+    margin-top: var(--space-xs) !important;
+  }
+}

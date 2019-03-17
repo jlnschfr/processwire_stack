@@ -1,0 +1,9 @@
+{% include "00-meta/header.twig" %}
+
+<main class="MainContent">
+{% for component in page.children %}
+  {% include "03-components/" ~ component.template ~ "/" ~ component.template ~ ".twig" %}
+{% endfor %}
+</main>
+
+{% include "00-meta/footer.twig" %}

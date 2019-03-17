@@ -1,0 +1,25 @@
+:root {
+  --font-family: "Roboto", "Helvetica", "Arial";
+
+  --font-size-default: 1.6rem;
+  --line-height-default: 1.6;
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey-dark: #333;
+  --color-grey-medium: #7c7c7c;
+  --color-grey-light: #e5e5e5;
+  --color-primary: #f00;
+
+  --transition: all 0.35s ease;
+
+  --space-xs: 2.5rem;
+  --space-s: 5rem;
+  --space-m: 7.5rem;
+}
+
+@custom-media --mobile-tablet (max-width: 64em);
+@custom-media --mobile (max-width: 47.9375em);
+@custom-media --tablet-desktop (min-width: 48em);
+@custom-media --tablet (min-width: 48em) and (max-width: 64em);
+@custom-media --desktop (min-width: 64.0625em);

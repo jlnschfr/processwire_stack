@@ -1,0 +1,18 @@
+{#
+  ImageBlock
+    - component
+      - component.image
+#}
+
+{% set widthL = 800 %}
+{% set widthM = 600 %}
+{% set widthS = 270 %}
+
+<div class="ImageBlock js-ImageBlock Block">
+  {% include "02-atoms/image/image.twig" with {
+    "image": component.image,
+    "widthL": widthL,
+    "widthM": widthM,
+    "widthS": widthS
+  } %}
+</div>
