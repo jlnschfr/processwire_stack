@@ -1,4 +1,4 @@
-# Processwire Frontend Stack
+# Processwire Twig Frontend Stack
 
 Author: Julian Schäfer, info@julian-schaefer.net
 

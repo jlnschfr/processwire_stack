@@ -17,7 +17,7 @@
   "author": "Julian Schäfer <julian@factorial.io>",
   "license": "MIT",
   "devDependencies": {
-    "@factorial/frontend-stack-core": "^0.5.0",
+    "@factorial/frontend-stack-core": "^0.8.3",
     "gulp": "^3.9.1",
     "neutrino": "^8.3.0"
   },
